@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <p> Resilience Clicker </p>
+      <fieldset>
+        <form action="/" method="post">
+          <input type="submit" class="ghost-button" value="Resilience">
+        </form>
+      </fieldset>
+      <% if(amount !== null){ %>
+        <p><%= amount %></p>
+      <% } %>
+
+      <% if(error !== null){ %>
+        <p><%= error %></p>
+      <% } %>
+      <form action="/buykebab" method="post">
+        <input type="submit" class="Kebab" value="Buy A Kebab">
+      </form>
+    </div>
+  </body>
+</html>
